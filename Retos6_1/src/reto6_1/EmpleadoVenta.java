@@ -40,6 +40,10 @@ public class  EmpleadoVenta extends Empleado{
 		this.Ventas=getVentas()+numeroVentas;
 	}
 
-	
+	@Override
+	public String GetNombreCompleto(Empleado empleado) {
+
+		return "Empleado De Ventas: " + empleado.getNombre() + " " + empleado.getApellido();
+	}
 	
 }
